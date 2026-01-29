@@ -6,8 +6,8 @@ console.log("Hello this is the AI Inventory assistant")
 // Part 1 // 
 let itemName = "USB-C Cable"
 let unitCost = "3.25"
-let currentStock = "100"
-let reorderLevel = "400"
+let currentStock = "50"
+let reorderLevel = "100"
 let targetStock = "100"
 let weeklyDemand = "200" 
 let supplierLeadTimeWeeks = "2" // 2 Weeks // 
@@ -20,6 +20,6 @@ let reorderNow = currentStock <= reorderLevel || weeksOfCover < supplierLeadTime
 // Part 3 // 
 console.log("What is the Product?", itemName)
 console.log("How many weeks to cover?", weeksOfCover)
-console.log("Reorder Now:", reorderNow)
+console.log("Should We Reorder Now?", reorderNow)
 console.log("Recommended Reorder Quantity:", reorderQuantity)
 console.log("How much we estimate for the reorder cost:", estimatedReorderCost)
